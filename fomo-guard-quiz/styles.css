@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; }
+.app {
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.card {
+  width: min(720px, 92vw);
+  background: rgba(255,255,255,0.84);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+  padding: 24px;
+  text-align: center;
+}
+h1 { margin: 0 0 12px; font-size: 28px; }
+h2 { margin: 0 0 8px; font-size: 18px; color: #374151; font-weight: 600; }
+p { margin: 8px 0; color: #374151; }
+.small { color: #6b7280; font-size: 14px; }
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  text-align: center;
+  margin: 12px 0 16px;
+  font-size: 16px;
+}
+.btn {
+  appearance: none;
+  border: 0; border-radius: 12px;
+  padding: 10px 16px;
+  background: #4f46e5; color: white; font-weight: 600;
+  cursor: pointer;
+  transition: transform .05s ease, filter .2s ease;
+}
+.btn.secondary { background: #e5e7eb; color: #111827; }
+.btn:hover { filter: brightness(1.05); }
+.btn:active { transform: translateY(1px); }
+.pill-row { display: flex; justify-content: center; gap: 12px; margin-top: 16px; }
+.pill {
+  width: 44px; height: 44px; border-radius: 999px;
+  border: 1px solid #d1d5db; background: rgba(255,255,255,0.7);
+  font-weight: 600; color: #111827; cursor: pointer;
+}
+.encourage {
+  color: #065f46; background: #ecfdf5; border: 1px solid #a7f3d0;
+  border-radius: 12px; padding: 10px 12px; font-size: 14px; margin-top: 10px;
+}
+.progress { display: flex; align-items: center; gap: 8px; justify-content: center; }
+.progress .bar { width: 160px; height: 8px; background: #e5e7eb; border-radius: 999px; overflow: hidden; }
+.progress .bar > span { display: block; height: 100%; background: #6366f1; }
+.fade-enter { opacity: 0; transform: translateY(6px); }
+.fade-enter-active { opacity: 1; transform: translateY(0); transition: opacity .24s ease, transform .24s ease; }
+.fade-exit { opacity: 1; transform: translateY(0); }
+.fade-exit-active { opacity: 0; transform: translateY(-6px); transition: opacity .2s ease, transform .2s ease; }
+.audio-tip { font-size: 12px; color: #6b7280; margin-top: 8px; }
